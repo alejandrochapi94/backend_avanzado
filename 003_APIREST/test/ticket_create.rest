@@ -1,0 +1,8 @@
+POST http://localhost:4000/api/tickets HTTP/1.1
+Content-Type: application/json
+
+{
+    "userId": "ba159051-ef1d-49d4-8d3d-ee2fe5e89724",
+    "title": "petición 1",
+    "description": "primera creación de ticket"
+}

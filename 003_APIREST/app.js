@@ -4,12 +4,13 @@ import express from "express";
 import morgan from "morgan";
 import mongoose from "mongoose";
 import userRoutes from "./routes/usersRoutes.js";
+import ticketRoutes from "./routes/ticketsRoutes.js";
 const app = express();
 
 const DB_URL = (process.env.NODE_ENV === "dev"
 ? 'mongodb://localhost:27017/003_apirest_test'
 : process.env.DB_URL || "mongodb://localhost:27017/003_apirest");
-//const DB_URL = process.env.DB_URL || "mongodb://localhost:27017/003_apirest";
+
 
 mongoose.connect(DB_URL)
 .then(() => {
@@ -36,5 +37,6 @@ app.get("/inicio", (req, res) => {
 });
 
 app.use("/api/users", userRoutes);
+app.use("/api/tickets", ticketRoutes);
 
 export default app;
