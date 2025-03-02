@@ -1,0 +1,2 @@
+GET http://localhost:5000/api/protected/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzQ4MTNhZjE5ZmRiZGMwY2VlM2RmYiIsImlhdCI6MTc0MDkzMTQxOCwiZXhwIjoxNzQwOTM1MDE4fQ.f3jfaqwLPSRUMCcebAm25nmiQiQTmq3AVY4uIh1MAGA
